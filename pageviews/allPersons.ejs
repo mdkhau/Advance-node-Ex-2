@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Persons</title>
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+</head>
+<body>
+    <main>
+        <h2>All persons</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>customerId</th>
+                    <th>Full name</th>
+                    <th>address</th>
+                      <th>favoritIceCream</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% result.forEach(person =>{ %>
+                    <tr>
+                        <td><%= person.customerId %></td>
+                        <td><%= person.firstname %> <%= person.lastname%></td>
+                        <td><%= person.address %></td>
+                        <td><%= person.favoritIceCream %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </main>
+    <a href="/"><button>Menu</button></a>
+</body>
+</html>

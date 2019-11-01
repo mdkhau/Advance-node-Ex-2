@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%= header %></title>
+</head>
+<body>
+    <h1><%= header %></h1>
+    <form action="<%= action %>" method="post">
+        <p>
+            <label for="personId">PersonID:</label>
+            <input type="text" id="customerId" name="customerId"
+                   size="5" value="<%= customerId.value %>"
+                   <%= customerId.readonly %> >
+        </p>
+        <p>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname"
+            size="15" value="<%= firstname.value %>"
+            <%= firstname.readonly %> >
+        </p>
+        <p>
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname" name="lastname"
+                size="25" value="<%= lastname.value %>"
+                <%= lastname.readonly %> >
+        </p>
+        <p>
+            <label for="address">address:</label>
+            <input type="text" id="address" name="address"
+                size="10" value="<%= address.value %>"
+                <%= address.readonly %> >
+        </p>
+        <p>
+            <label for="favoritIceCream">favoritIceCream:</label>
+            <input type="text" id="favoritIceCream" name="favoritIceCream"
+                size="15" value="<%= favoritIceCream.value %>"
+                <%= favoritIceCream.readonly %> >
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+    <a href="/"><button>Menu</button></a>
+</body>
+</html>
