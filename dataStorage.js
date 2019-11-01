@@ -23,7 +23,7 @@ const customervalues = customer => [
 
 const customerValuesForUpdate = customer =>[
     customer.firstname, customer.lastname,customer.address,
-    +customer.favoritIceCream, +customer.customerId
+    customer.favoritIceCream, +customer.customerId
 ];
 
 module.exports=class customerDataStorage{
